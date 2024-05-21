@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    background-color: wheat;
+}
+
+#inside-card {
+    display: flex;
+}
+
+.max_value_card {
+    border: 3px solid green;
+}
+
+.min_value_card {
+    border: 3px solid red;
+}
+
+#photo_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#photo {
+    width: 10vw;
+    height: 10vw;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.more_tickets {
+    color: green;
+}
+
+.low_tickets {
+    color: red;
+}
+
+.add-button {
+    content: '002B';
+    background-color: green;
+}
+
+.remove-button {
+    background-color: red;
+}
+
+.full_amount_of_tickets {
+    background-color: rgb(248, 145, 145);
+}
+
+.no_tickets {
+    background-color: #70cc70;
+}
+
+.but {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#button-div > button, #details {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#details > a {
+    text-decoration: none;
+    color: white;
+}
+
+#button-div > button:hover, #details:hover {
+    background-color: black;
+}

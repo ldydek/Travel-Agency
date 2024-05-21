@@ -1,0 +1,28 @@
+<nav>
+    <div class="menu-item">
+        <a routerLink="/">
+            <h1>Hi Sky Travel</h1>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a *ngIf="user.type <= 0" routerLink="/journeys">Oferty</a>
+        <a *ngIf="user.type >= 1" routerLink="/journeys">Zarządzaj wycieczkami</a>
+    </div>
+    <div class="menu-item" *ngIf="user.type == 0">
+        <a routerLink="/basket">Koszyk</a>
+    </div>
+    <div class="menu-item" *ngIf="user.type == 0">
+        <a routerLink="/history">Twoje zakupy</a>
+    </div>
+    <div class="menu-item" *ngIf="user.type >= 2">
+        <a routerLink="/admin" routerLinkActive="active">Widok admina</a>
+    </div>
+    <div class="menu-item">
+        <a routerLink="/login" routerLinkActive="active" *ngIf="user.type < 0">Logowanie</a>
+        <h1 *ngIf="user.type >= 0">{{user.nick}} </h1>
+    </div>
+    <div class="menu-item">
+        <a routerLink="/signup" routerLinkActive="active" *ngIf="user.type < 0">Rejestracja</a>
+        <a (click)="authService.logOut()" *ngIf="user.type >= 0" routerLink="home" routerLinkActive="active">Wyloguj się</a>
+    </div>
+</nav>

@@ -1,0 +1,11 @@
+<div id="container">
+    <img class="card-img" src="../../../assets/images/egzotyka.jpg" class="img-responsive" alt="Responsive image">
+    <div id="basket">
+        <h1>Koszyk</h1>
+        <p *ngIf="basketService.basket.length>0" id="cost">Kwota do zapłaty: {{basketService.getCost()}}</p>
+        <p *ngIf="basketService.basket.length==0" id="cost">Podróż na drugą półkulę? Dodaj jakieś wycieczki do koszyka!</p>
+        <div class="basket-item" *ngFor="let item of basketService.basket">
+            <p>{{item.name}} x {{item.quantity}}</p>
+        </div>
+    </div>
+</div>

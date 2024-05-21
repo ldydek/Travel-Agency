@@ -1,0 +1,17 @@
+div {
+    width: 50vw;
+    height: 10vw;
+    border: 3px solid red;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-weight: 1000;
+    text-align: center;
+}

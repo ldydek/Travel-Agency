@@ -1,0 +1,31 @@
+<div id="card" [ngClass]="{max_value_card:edgePrice==1, min_value_card:edgePrice==-1}">
+    <div id="inside-card">
+        <div id="photo_buttons">
+            <div id="photo">
+                <img [src]="journey.previewImage" alt="">
+            </div>
+            <div *ngIf="inJourneys && user.type == 0" id="buttons">
+                <button [ngClass]="{no_tickets:noTickets}" class="but add-button" (click)="basketService.addToBasket(this.journey)" (click)="add()" [disabled]="journey.maxTickets == 0">&#43;</button>
+                <button [ngClass]="{full_amount_of_tickets:fullAmountOfTickets}" class="but remove-button" (click) = "remove()"  (click)="basketService.removeFromBasket(this.journey)" [disabled]="journey.maxTickets == this.ticketsNumber">&#8722;</button>
+            </div>
+        </div>
+        <div id="description">
+            <p>Dokąd? {{journey.tourName | uppercase}}</p>
+            <p>Państwo: {{journey.destinationCountry | uppercase}}</p>
+            <p>Data rozpoczęcia: {{journey.startDate}}</p>
+            <p>Data zakończenia: {{journey.endDate}}</p>
+            <p>Cena: ${{journey.tourPrice}}</p>
+            <p *ngIf="journey.maxTickets>0" [ngClass]="{low_tickets:smallAmountOfTickets}">Dostępna ilość: {{journey.maxTickets}}</p>
+            <p class="low_tickets" *ngIf="journey.maxTickets==0">BRAK DOSTĘPNYCH WYCIECZEK!</p>
+            <p>Opis: {{journey.description}}</p>
+            <app-journey-rating *ngIf="inJourneys==false" [rating]="rating" (ratingUpdated)="onRatingChanged($event)"></app-journey-rating>
+        </div>
+    </div>
+    <div id="button-div" *ngIf="user.type >= 0">
+        <div id="details">
+            <a [routerLink]="journey.key" *ngIf="inJourneys">SZCZEGÓŁY</a>
+            <a routerLink="/journeys" *ngIf="inJourneys==false">POWRÓT</a>
+        </div>
+        <button (click)="removeCard()" *ngIf="user.type >= 1">USUŃ</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <p>Ocena wycieczki</p>
+    <div id="buttons">
+        <button
+            *ngFor="let ratingId of ratingArray;
+            index as i" [id]="'star_'+i" (click)="calculateRating(i+1)">
+            <mat-icon>
+                {{ iconStatus(i) }}
+            </mat-icon>
+    </button>
+    </div>
+ </div>

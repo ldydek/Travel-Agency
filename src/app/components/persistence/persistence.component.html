@@ -1,0 +1,14 @@
+<div class="persistence-container">
+    <h1>Stan logowania</h1>
+    <div class="button-container">
+        <button (click)="persistenceService.setPersistence('local')">
+            <p>Local</p>
+        </button>
+        <button (click)="persistenceService.setPersistence('session'); persistence='session'">
+            <p>Session</p>
+        </button>
+        <button (click)="persistenceService.setPersistence('none'); persistence='none'">
+            <p>None</p>
+        </button>
+    </div>
+</div>

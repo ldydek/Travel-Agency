@@ -1,0 +1,22 @@
+<div id="main-container">
+    <img class="card-img" src="../../../assets/images/egzotyka.jpg" class="img-responsive" alt="Responsive image">
+    <div id="container">
+        <app-journey [journey]="journey"></app-journey>
+        <form (submit)="submit()" [formGroup]="form">
+            <h2>Opinie</h2>
+            <input formControlName="nick" type="text" placeholder="nick użytkownika">
+            <input formControlName="tourName" type="text" placeholder="nazwa wycieczki">
+            <input formControlName="opinion" type="text" minlength="50" maxlength="500" placeholder="recenzja">
+            <input formControlName="date" type="text" placeholder="data wycieczki">
+            <button [disabled]="form.invalid" type="submit">DODAJ</button>
+        </form>
+        <div id="opinions">
+            <div *ngFor="let comment of comments" class="single-opinion">
+                <p>Nick użytkownika: {{comment.nick}}</p>
+                <p>Nazwa wycieczki: {{comment.tourName}}</p>
+                <p>Opinia: {{comment.opinion}}</p>
+                <p>Data wycieczki: {{comment.date}}</p>
+            </div>
+        </div>
+    </div>
+</div>

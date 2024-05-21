@@ -1,0 +1,23 @@
+#filter-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#filter-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#button-container, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+<div id="main-container">
+    <img class="card-img" src="../../../assets/images/egzotyka.jpg" class="img-responsive" alt="Responsive image">
+    <div id="form">
+        <h1>Dodaj nową wycieczkę!</h1>
+        <form (ngSubmit)="addJourney()" [formGroup]="journeyForm">
+            <input type="text" placeholder="nazwa wycieczki" formControlName="name">
+            <input type="text" placeholder="państwo" formControlName="country">
+            <input type="text" placeholder="data rozpoczęcia" formControlName="startDate">
+            <input type="text" placeholder="data zakończenia" formControlName="endDate">
+            <input type="text" placeholder="cena" formControlName="price">
+            <input type="text" placeholder="dostępna ilość" formControlName="tickets">
+            <input type="text" placeholder="opic" formControlName="description">
+            <input type="text" placeholder="link do obrazka" formControlName="image">
+            <button [disabled]="journeyForm.invalid" type="submit">DODAJ</button>
+        </form>
+    </div>
+</div>

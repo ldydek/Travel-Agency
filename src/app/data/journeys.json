@@ -1,0 +1,112 @@
+[ 
+    {
+        "key": "",
+        "tourName": "South Island",
+        "destinationCountry": "New Zealand",
+        "startDate": "2023-07-01",
+        "endDate": "2023-07-13",
+        "tourPrice": 250,
+        "maxTickets": 20,
+        "description": "New Zealand's South Island brims with majestic landscapes at every turn, from dramatic mountains to spectacular fjords. Here, you can admire the mountains of Fiordland National Park, a UNESCO World Heritage Site, from hiking trails or a boat on Milford Sound.",
+        "previewImage": "assets/images/south_island.jfif"
+    },
+    {
+        "key": "",
+        "tourName": "Maui",
+        "destinationCountry": "Hawaii",
+        "startDate": "2023-07-01",
+        "endDate": "2023-07-20",
+        "tourPrice": 90,
+        "maxTickets": 20,
+        "description": "Whether you're driving along the Road to Hana, enjoying a bird's-eye view of Maui's lush coastline from a helicopter, snorkeling with sea turtles or simply relaxing on white or black sand beaches, you'll find that this Hawaiian island is unlike any other tropical destination.",
+        "previewImage": "assets/images/maui.webp"
+    },
+    {
+        "key": "",
+        "tourName": "Tahiti",
+        "destinationCountry": "French Polynesia",
+        "startDate": "2023-06-14",
+        "endDate": "2023-06-21",
+        "tourPrice": 80,
+        "maxTickets": 25,
+        "description": "Travel to this island – the largest in French Polynesia – if you've been dreaming of a vacation spent lazing in a lavish overwater bungalow. Beyond the posh resorts, Tahiti boasts black sand and golden beaches, a bustling capital and prime snorkeling and surfing conditions.",
+        "previewImage": "assets/images/tahiti.jpg"
+    },
+    {
+        "key": "",
+        "tourName": "Barcelona",
+        "destinationCountry": "Spain",
+        "startDate": "2023-06-14",
+        "endDate": "2023-06-28",
+        "tourPrice": 240,
+        "maxTickets": 15,
+        "description": "Although corrida is banned in Catalonia, there are still many other fascinating attractions. Travel to Barcelona to see the unfinished but already monumental Sagrada Familia built in the Spanish-Gothic/Catalan-Modernist style - One of the most beautiful temples in the whole world!",
+        "previewImage": "assets/images/barcelona.avif"
+    },
+    {
+        "key": "",
+        "tourName": "Maldives",
+        "destinationCountry": "Maldives",
+        "startDate": "2023-01-20",
+        "endDate": "2023-02-14",
+        "tourPrice": 300,
+        "maxTickets": 20,
+        "description": "It is not cheap or easy to reach, but this isolated paradise between the Arabian and Laccadive seas is the personification of a dreamy tropical vacation. In this South Asian destination, which is made up of more than 1,000 islands, thatched-roof bungalows sit above the bright aquamarine sea, providing easy water access and a romantic atmosphere.",
+        "previewImage": "assets/images/maldives.webp"
+    },
+    {
+        "key": "",
+        "tourName": "Santorini",
+        "destinationCountry": "Greece",
+        "startDate": "2023-06-07",
+        "endDate": "2023-06-14",
+        "tourPrice": 180,
+        "maxTickets": 10,
+        "description": "An ideal place to spend your summer holidays. Breathtaking panoramas, aesthetic architecture full of azure-white buildings and beaches with beautiful sunsets are the reasons why you should be there",
+        "previewImage": "assets/images/santorini.webp"
+    },
+    {
+        "key": "",
+        "tourName": "Glacier National Park",
+        "destinationCountry": "USA",
+        "startDate": "2023-04-20",
+        "endDate": "2023-04-25",
+        "tourPrice": 70,
+        "maxTickets": 15,
+        "description": "Snow-capped peaks and azure lakes are just two reasons why Glacier National Park is one of America's most striking parks. There are more than 700 miles of hiking trails in this Montana park, plus 13 designated areas for camping.",
+        "previewImage": "assets/images/glacier_national_park.jfif"
+    },
+    {
+        "key": "",
+        "tourName": "Grand Canyon",
+        "destinationCountry": "USA",
+        "startDate": "2023-03-16",
+        "endDate": "2023-03-21",
+        "tourPrice": 250,
+        "maxTickets": 10,
+        "description": "Measuring roughly 277 miles long, 18 miles wide and about a mile deep, the Grand Canyon offers plenty of outdoor activities for everyone from day-trippers to adventure junkies. Hike along the national park's popular Rim and Bright Angel trails for unparalleled vistas, cool off with a whitewater rafting excursion down the Colorado River or view the dramatic Arizona landscape from above during a helicopter tour.",
+        "previewImage": "assets/images/grand_canyon.jpeg"
+    },
+    {
+        "key": "",
+        "tourName": "Bali",
+        "destinationCountry": "Indonesia",
+        "startDate": "2023-05-21",
+        "endDate": "2023-05-23",
+        "tourPrice": 200,
+        "maxTickets": 15,
+        "description": "Serene temples and beautiful beaches are the biggest draws to this lush Indonesian paradise. And we do mean lush – the region's notoriously soggy wet season is best avoided by planning a visit between April and October. Break up your beach time with a visit to the village of Kintamani, home to a towering (and active) volcano, as well as a large lake.",
+        "previewImage": "assets/images/bali.jfif"
+    },
+    {
+        "key": "",
+        "tourName": "New York City",
+        "destinationCountry": "USA",
+        "startDate": "2023-08-26",
+        "endDate": "2023-09-21",
+        "tourPrice": 200,
+        "maxTickets": 7,
+        "description": "New York City hosts infinite urban adventures: You can wander through Central Park, tour art exhibits at the Met, catch a Broadway show or peruse SoHo's stylish boutiques.",
+        "previewImage": "assets/images/new_york_city.jpg"
+    }
+]
